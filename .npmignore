@@ -1,0 +1,14 @@
+## the src folder
+src
+esbuild.config.js
+
+## node modules folder
+node_modules
+## incase you have a git repositiory initiated
+.git
+.gitignore
+.DS_Store
+npm-debug.log
+.npmrc
+
+package-lock.json

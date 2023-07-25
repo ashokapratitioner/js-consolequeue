@@ -1,0 +1,52 @@
+{
+  "name": "console-queue-manager",
+  "version": "1.0.1",
+  "description": "The Console Queue Management Program is a JavaScript application that allows you to manage a queue of console messages. It provides the functionality to add messages to the queue and log them to the console one by one with a specified delay. Additionally, you can view the current console queue, cancel specific console messages, or cancel all past messages.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "author": "Ashok Gupta",
+  "private": false,
+  "keywords": [
+    "console queue manager",
+    "javascript",
+    "manage javascript consoles",
+    "predictable consoles"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "prebuild": "npx rimraf dist",
+    "bundle": "node esbuild.config.js",
+    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokapratitioner/js-consolequeue.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashokapratitioner/js-consolequeue/issues"
+  },
+  "homepage": "https://github.com/ashokapratitioner/js-consolequeue#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "esbuild": "^0.18.14",
+    "rimraf": "^3.0.2"
+  }
+}

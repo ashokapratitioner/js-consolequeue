@@ -1,5 +1,12 @@
 # Console Queue Management Program
 
+[![Version][npm-version]][download-url]
+[![npm download][download-image]][download-url]
+
+[download-image]: https://img.shields.io/npm/dm/console-queue-manager.svg?style=flat-square
+[download-url]: https://npmjs.org/package/console-queue-manager
+[npm-version]: http://img.shields.io/npm/v/console-queue-manager.svg
+
 ## Purpose
 
 The Console Queue Management Program is a JavaScript application that allows you to manage a queue of console messages. It provides the functionality to add messages to the queue and log them to the console one by one with a specified delay. Additionally, you can view the current console queue, cancel specific console messages, or cancel all past messages.
